@@ -11,7 +11,7 @@
 				<span class="nav-separator">|</span>
 				<a href="/detect" class="nav-link ${page eq 'detect' ? 'active' : '' }">Detecting</a>
 				<span class="nav-separator">|</span>
-				<a href="/roi" class="nav-link ${page eq '/roi' ? 'active' : '' }">ROI Detecting</a>
+				<a href="/roi" class="nav-link ${page eq 'roi' ? 'active' : '' }">ROI Detecting</a>
 			</nav>
 		</div>
 	</header>

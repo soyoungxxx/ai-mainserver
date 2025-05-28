@@ -42,6 +42,7 @@
                             <button class="btn btn-success" onclick="startROIDetection()" id="roiDetectBtn" disabled>
                                 ROI Detection 시작
                             </button>
+                            <button class="btn btn-warning" onclick="clearROIImage()">이미지 재선택</button>
                         </div>
                         <div class="roi-info">
                             <p>이미지를 클릭하여 점을 찍고, 우클릭으로 종료하여 관심 영역을 설정하세요.</p>
@@ -75,12 +76,14 @@
                         <div id="summaryTab" class="tab-content active">
                             <!-- 요약 결과 -->
                         </div>
-                        <div id="detailedTab" class="tab-content">
-                            <!-- 상세 결과 -->
-                        </div>
-                        <div id="statisticsTab" class="tab-content">
-                            <!-- 통계 결과 -->
-                        </div>
+
+<%--                        <div id="detailedTab" class="tab-content">--%>
+<%--                            <!-- 상세 결과 -->--%>
+<%--                        </div>--%>
+<%--                        <div id="statisticsTab" class="tab-content">--%>
+<%--                            <!-- 통계 결과 -->--%>
+<%--                        </div>--%>
+
                     </div>
                 </div>
             </div>
