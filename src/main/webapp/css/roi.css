@@ -1,0 +1,383 @@
+﻿/* ROI 페이지 전용 스타일 */
+
+.roi-section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.roi-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.roi-section p {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.roi-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* 업로드 섹션 */
+.upload-section {
+    padding: 2rem;
+}
+
+/* ROI 작업 공간 */
+.roi-workspace {
+    padding: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.roi-controls {
+    margin-bottom: 2rem;
+}
+
+.roi-controls h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.roi-info {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #17a2b8;
+}
+
+.roi-info p {
+    margin: 0.25rem 0;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* 캔버스 컨테이너 */
+.image-canvas-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#roiCanvas {
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    cursor: crosshair;
+    max-width: 100%;
+    height: auto;
+}
+
+.canvas-overlay {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+/* ROI 박스 스타일 */
+.roi-box {
+    position: absolute;
+    border: 2px solid #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.2);
+    cursor: move;
+    pointer-events: auto;
+}
+
+.roi-box:hover {
+    border-color: #ff5252;
+    background-color: rgba(255, 82, 82, 0.3);
+}
+
+.roi-box .roi-label {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.roi-box .roi-delete {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roi-box .roi-delete:hover {
+    background-color: #c82333;
+}
+
+/* ROI 목록 섹션 */
+.roi-list-section {
+    padding: 2rem;
+    border-top: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+}
+
+.roi-list-section h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.roi-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.roi-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #ff6b6b;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.roi-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.roi-item p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: left;
+}
+
+.roi-item .roi-actions {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.roi-item .roi-actions button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* 결과 영역 */
+.roi-results-area {
+    padding: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.roi-results-area h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.results-tabs {
+    display: flex;
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.tab-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.tab-btn.active {
+    border-bottom-color: #6f42c1;
+    color: #6f42c1;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    min-height: 200px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 결과 카드 */
+.result-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.result-card h4 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.detection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.detection-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+}
+
+.detection-item .object-name {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.detection-item .confidence {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.detection-item .position {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* 통계 차트 */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #6f42c1, #8b5cf6);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .control-buttons {
+        flex-direction: column;
+    }
+
+    .control-buttons .btn {
+        width: 100%;
+    }
+
+    #roiCanvas {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .results-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        flex: 1;
+        min-width: 80px;
+    }
+
+    .roi-list {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detection-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 로딩 애니메이션 */
+.roi-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.roi-loading .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #6f42c1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.roi-loading p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

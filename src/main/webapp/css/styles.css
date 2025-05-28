@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.sidebar li.active {
+    background-color: #a8d8f0;
+}
+
+.sidebar li.active a {
+    font-weight: bold;
+}
+
+.sidebar li.sub-menu a {
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.sidebar li.divider {
+    height: 1px;
+    background-color: #ddd;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Search Panel */
+.search-panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    font-size: 14px;
+}
+
+.date-picker-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.search-btn {
+    background-color: #002a5c;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.download-btn, .print-btn {
+    background-color: #002a5c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Table Info */
+.table-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination-btn, .page-number {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.page-number.active {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
