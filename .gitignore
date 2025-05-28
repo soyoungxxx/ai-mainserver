@@ -2,6 +2,6 @@
 /target/
 .classpath
 .project
-/.idea
-/.mvn
-/.setting
+/.idea/
+/.mvn/
+/.setting/
