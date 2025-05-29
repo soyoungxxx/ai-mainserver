@@ -35,8 +35,8 @@
                     </div>
                     
                     <div class="feature-card">
-                        <h3>배치 처리</h3>
-                        <p>여러 이미지를 한번에 처리할 수 있습니다.</p>
+                        <h3>준비 중</h3>
+                        <p>준비 중입니다.</p>
                         <button class="btn btn-secondary" onclick="showComingSoon()">준비중</button>
                     </div>
                 </div>
