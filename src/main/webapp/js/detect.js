@@ -9,29 +9,29 @@ function selectMenu(id) {
 
 // 파일 업로드 후 미리보기 생성
 function uploadFile(id) {
-      const file = $('#'+id)[0].files[0];
-      if (!file || !file.type.startsWith('image/')) {
+    const file = $('#'+id)[0].files[0];
+    if (!file || !file.type.startsWith('image/')) {
         alert('이미지 파일을 선택하세요.');
         return;
-      }
+    }
 
-      const reader = new FileReader();
-      reader.onload = function(e) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
         $('#previewImg').attr('src', e.target.result);
         $('#imagePreview').css('display', 'block');
-      };
-      reader.readAsDataURL(file);
+    };
+    reader.readAsDataURL(file);
 
-	  $('#uploadBox').css('display', 'none');
-	  $('#detectBtn').prop('disabled', false);
-    }
+    $('#uploadBox').css('display', 'none');
+    $('#detectBtn').prop('disabled', false);
+}
 
-    function clearImage() {
-      $('#imageInput').val('');
-      $('#previewImg').attr('src', '');
-      $('#completeImg').attr('src', '');
-      $('#completeImg').hide();
-      $('#imagePreview').css('display', 'none');
-	  $('#uploadBox').css('display', 'block');
-	  $('#detectBtn').prop('disabled', true);
-    }
+function clearImage() {
+    $('#imageInput').val('');
+    $('#previewImg').attr('src', '');
+    $('#completeImg').attr('src', '');
+    $('#completeImg').hide();
+    $('#imagePreview').css('display', 'none');
+    $('#uploadBox').css('display', 'block');
+    $('#detectBtn').prop('disabled', true);
+}

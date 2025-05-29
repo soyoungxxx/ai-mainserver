@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class ViewController {
 	@GetMapping("/")
 	public String root() {
+		System.out.println("🔥 root('/') 호출됨");
 		return "redirect:/home";
 	}
 	

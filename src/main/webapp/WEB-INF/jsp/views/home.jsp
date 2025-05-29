@@ -1,5 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<html>
 <head>
 <title>AI Detecting</title>
 <!-- 실시간 탐지
@@ -8,32 +9,32 @@
 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="/js/aiHandler.js"></script>
+<script src="<c:url value="/js/aiHandler.js"/>"></script>
 
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/home.css">
 
 </head>
 
 <body>
-	<%@ include file="/jsp/common/header.jsp"%>
+	<%@ include file="/WEB-INF/jsp/common/header.jsp" %>
 	<main class="main-content">
         <div class="container">
             <section class="hero-section">
                 <h2>AI Detection 시스템에 오신 것을 환영합니다</h2>
                 <p>다양한 AI Detection 기능을 체험해보세요.</p>
-                
+
                 <div class="feature-grid">
                     <div class="feature-card">
                         <h3>Simple Detection</h3>
                         <p>간단한 객체 탐지 기능</p>
-                        <a href="detect" class="btn btn-primary">Detection 시작</a>
+                        <a href="${pageContext.request.contextPath}/detect" class="btn btn-primary">Detection 시작</a>
                     </div>
-                    
+
                     <div class="feature-card">
                         <h3>관심 영역 설정</h3>
                         <p>관심 영역 설정 후, 해당 범위 내에서만 객체 탐지</p>
-                        <a href="roi" class="btn btn-primary">Detection 시작</a>
+                        <a href="${pageContext.request.contextPath}/roi" class="btn btn-primary">Detection 시작</a>
                     </div>
                     
                     <div class="feature-card">

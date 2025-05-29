@@ -13,7 +13,7 @@
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/jsp/views/" />
+		<property name="prefix" value="/WEB-INF/jsp/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 	<bean id="multipartResolver"
