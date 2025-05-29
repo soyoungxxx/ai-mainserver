@@ -21,9 +21,6 @@
 	<main class="main-content">
         <div class="container">
             <section class="hero-section">
-                <h2>AI Detection 시스템에 오신 것을 환영합니다</h2>
-                <p>다양한 AI Detection 기능을 체험해보세요.</p>
-
                 <div class="feature-grid">
                     <div class="feature-card">
                         <h3>Simple Detection</h3>
