@@ -81,3 +81,9 @@
     color: #6c757d;
     font-size: 0.9rem;
 }
+
+.container h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}

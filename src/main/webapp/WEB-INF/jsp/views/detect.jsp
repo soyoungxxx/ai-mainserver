@@ -26,7 +26,7 @@
                         <div class="upload-box" id="uploadBox">
                             <div class="upload-content">
                                 <div class="upload-icon">📁</div>
-                                <p>이미지를 드래그하거나 클릭하여 업로드하세요</p>
+                                <p>이미지를 업로드하세요</p>
                                 <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="uploadFile(this.id)">
                                 <button class="btn btn-primary" onclick="document.getElementById('imageInput').click()">
                                     파일 선택
@@ -44,9 +44,6 @@
                     <div class="detection-controls">
                         <button class="btn btn-success" id="detectBtn" onclick="handleImagePredict()" disabled>
                             Detection 시작
-                        </button>
-                        <button class="btn btn-secondary" onclick="resetDetection()">
-                            초기화
                         </button>
                     </div>
                 </div>

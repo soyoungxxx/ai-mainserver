@@ -68,9 +68,9 @@
         <div class="roi-results-area" id="roiResultsArea" style="display: none;">
           <h3>ROI Detection 결과</h3>
           <div class="results-tabs">
-            <button class="tab-btn active" onclick="showResultTab('summary')">요약</button>
-            <button class="tab-btn" onclick="showResultTab('detailed')">상세</button>
-            <button class="tab-btn" onclick="showResultTab('statistics')">통계</button>
+            <button class="tab-btn active" onclick="showResultTab('summary')">결과</button>
+            <button class="tab-btn" onclick="showResultTab('detailed')" style="display: none;">상세</button>
+            <button class="tab-btn" onclick="showResultTab('statistics')" style="display: none;">통계</button>
           </div>
           <div class="results-content">
             <div id="summaryTab" class="tab-content active">

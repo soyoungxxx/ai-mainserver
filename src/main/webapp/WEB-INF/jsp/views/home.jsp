@@ -20,6 +20,7 @@
 	<%@ include file="/WEB-INF/jsp/common/header.jsp" %>
 	<main class="main-content">
         <div class="container">
+            <h2>1️⃣ 객체/수체 탐지</h2>
             <section class="hero-section">
                 <div class="feature-grid">
                     <div class="feature-card">
@@ -30,17 +31,19 @@
 
                     <div class="feature-card">
                         <h3>관심 영역 설정</h3>
-                        <p>관심 영역 설정 후, 해당 범위 내에서만 객체 탐지</p>
+                        <p>특정 범위 내 객체/수체 탐지</p>
                         <a href="${pageContext.request.contextPath}/roi" class="btn btn-primary">Detection 시작</a>
                     </div>
                     
                     <div class="feature-card">
                         <h3>준비 중</h3>
                         <p>준비 중입니다.</p>
-                        <button class="btn btn-secondary" onclick="showComingSoon()">준비중</button>
+                        <button class="btn btn-secondary">준비중</button>
                     </div>
                 </div>
             </section>
+
+            <hr/>
 
             <section class="stats-section" style="display:none;">
                 <h3>시스템 현황</h3>

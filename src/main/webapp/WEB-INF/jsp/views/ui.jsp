@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/styles.css"/>
 </head>
 <body>
-<%@ include file="/WEB-INF/common/header.jsp" %>
+<%@ include file="/WEB-INF/jsp/common/header.jsp" %>
     <div class="container">
         <header>
             <h1>서울시 BIM남부관리시스템</h1>
